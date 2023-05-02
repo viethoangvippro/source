@@ -1,0 +1,44 @@
+﻿@model IEnumerable<WebApplication2.Models.Cat>
+
+@{
+    ViewData["Title"] = "Danh mục sản phẩm";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Danh mục sản phẩm</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-success p-2" style="font-weight:bold"> Thêm mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NameCat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Img)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                 
+                <td>
+                    <a asp-action="CatPro" asp-controller="Pro" asp-route-id="@item.Id"> @Html.DisplayFor(modelItem => item.NameCat)</a> 
+                </td>
+                <td>
+                    <img class="rounded-circel" src="@item.Img" alt="@item.NameCat" style="max-width:150px; max-height:80px;" />
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" style="max-width:50px;"><i class="bi bi-pencil-square"></i></a> 
+                    <a asp-action="Details" asp-route-id="@item.Id" style="max-width:50px;"><i class="bi bi-eye"></i></a> 
+                    <a asp-action="Delete" asp-route-id="@item.Id"  style="max-width:50px;"><i class="bi bi-trash"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebApplication2.Models.Pro>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+}
+
+<div class="row col-md-2 offset-10">
+    <a class="btn btn-outline-success mb-5" asp-action="LoginTruongVietHoang" asp-controller="Users">Đăng nhập</a>
+</div>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://greenbike.com.vn/wp-content/uploads/2018/11/xe-dap-TrinX.jpg" class="d-block w-100 h-50" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://greenbike.com.vn/wp-content/uploads/2018/11/xe-dap-Merida.jpg" class="d-block w-100 h-50" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://greenbike.com.vn/wp-content/uploads/2018/11/Xe-dap-SPECIALIZED.jpg" class="d-block w-100 h-50" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="h1 col-md-10 offset-1 mb-5" style="text-align:center;">DANH SÁCH SẢN PHẨM</div>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 col-xs-6 border-primary mb-3">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-header text-white" style="background:red;">
+                            <p class="card-text">
+                                <h5 class="card-title">
+                                   <span>@item.NamePro</span>
+                                </h5>
+                            </p>
+                        </div>
+                    </div> 
+                            <div class="col-md-6">
+                                <img class="" src="@item.Img" width="100%" alt="@item.NamePro">
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Mô tả: </b> @item.Description</p>
+                                    <p class="card-text"><b>Tên sản phẩm: </b>@item.NamePro</p>
+                                </div>
+                           
+                            </div>
+                    <div class="col-md-12">
+                        <div class="card-footer">
+                            <p class="card-text">
+                                <a class="btn btn-outline-primary float-right" asp-action="DetailsHome" asp-controller="Pro" asp-route-id="@item.IdPro">
+                                    <i class="bi bi-eye-fill"></i> Chi tiết
+                                </a>
+                                <a >
+                                    <i class="bi bi-cart-plus"></i> Thêm vào giỏ (@item.Price.ToString())
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

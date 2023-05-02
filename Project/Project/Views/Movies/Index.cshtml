@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Movie>
+
+@{
+    ViewData["Title"] = "Danh sách phim";
+}
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 col-xs-6 border-primary mb-3">
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-header text-white bg-info">
+                            <p class="card-text">
+                                <h5 class="card-title">
+                                    @item.Name
+                                    <a class="text-white float-right"><i class="bi bi-pencil-square"></i></a>
+                                </h5>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="@item.ImageURl" width="100%" alt="@item.Name">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text"><b>Mô tả:</b> @item.Description</p>
+                            <p class="card-text"><b>Rạp:</b> @item.Cinema.Name </p>
+                            <p class="card-text"><b>Thể loại:</b> @item.MovieCategory</p>
+                            <p class="card-text"><b>Ngày bắt đầu:</b> @item.StartDay.ToString("dd MMM yy")</p>
+                            <p class="card-text"><b>Ngày kết thúc:</b> @item.EndDay.ToString("dd MMM yy") </p>
+                            <p class="card-text">
+                                <b>Trạng thái:</b>
+                                @if(DateTime.Now >=  item.StartDay && DateTime.Now <= item.EndDay)
+                                {
+                                    <span class="badge bg-success text-white">Có sẵn</span>
+                                }else if(DateTime.Now > item.EndDay)
+                                {
+                                    <span class="badge bg-danger text-white">Không khả dụng</span>
+                                }else
+                                {
+                                    <span class="badge bg-primary text-white">Sắp có</span>
+                                }
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card-footer">
+                            <p class="card-text">
+                                <a class="btn btn-outline-primay float-right"><i class="bi bi-eye-fill">Xem chi tiết</i></a>
+                                <a class="btn btn-success text-white"><i class="bi bi-cart-plus">Thêm giỏ hàng (<b>Giá</b> @item.Price.ToString("c"))</i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

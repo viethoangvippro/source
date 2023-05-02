@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NguyenThanhQuan_QLThongTin_MVC
+build_property.RootNamespace = NguyenThanhQuan_QLThongTin_MVC
+build_property.ProjectDir = C:\Users\Admin\source\repos\NguyenThanhQuan_QLThongTin_MVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\NguyenThanhQuan_QLThongTin_MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Huyens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHV5ZW5zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Huyens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHV5ZW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Huyens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHV5ZW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Huyens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHV5ZW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Huyens/HuyenTinh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHV5ZW5zXEh1eWVuVGluaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Huyens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHV5ZW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Tinhs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluaHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Tinhs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluaHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Tinhs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluaHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Tinhs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluaHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Tinhs/IndexNguyenThanhQuan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluaHNcSW5kZXhOZ3V5ZW5UaGFuaFF1YW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Users/LoginNguyenThanhQuan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW5OZ3V5ZW5UaGFuaFF1YW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/NguyenThanhQuan_QLThongTin_MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-t88jhko2mw

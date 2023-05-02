@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ConnectDB2.props" />
+</Project>

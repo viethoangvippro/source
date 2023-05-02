@@ -1,0 +1,35 @@
+﻿@model WebApplication2.Models.Cat
+
+@{
+    ViewData["Title"] = "Xoá danh mục";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Xoá @Model.NameCat</h1>
+
+<h3>Bạn muốn xoá sản phẩm này?</h3>
+<div>
+    <h4>Cat</h4>
+    <hr />
+    <dl class="col-md-8 offset-md-2">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NameCat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NameCat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Img)
+            
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Img)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Xoá" class="btn btn-danger" /> |
+        <a asp-action="IndexTruongVietHoang"><i class="bi bi-arrow-return-left" style="max-width:50px;"></i></a>
+    </form>
+</div>

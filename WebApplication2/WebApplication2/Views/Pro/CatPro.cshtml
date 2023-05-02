@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WebApplication2.Models.Pro>
+
+@{
+    ViewData["Title"] = "Quản lý sản phầm";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Sản phẩm </h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-success p-2" style="font-weight:bold"> Thêm mới</a>
+    
+</p>
+<table class="table ">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NamePro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Img)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NamePro)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    <img class="rounded-circel" src="@item.Img" alt="@item.NamePro" style="max-width:150px;max-height:80px;" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+            
+
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdPro" style="max-width:50px;"><i class="bi bi-pencil-square"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.IdPro" style="max-width:50px;"><i class="bi bi-eye"></i> </a>
+                    <a asp-action="Delete" asp-route-id="@item.IdPro" style="max-width:50px;"><i class="bi bi-trash"></i> </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    <a asp-action="IndexTruongVietHoang" asp-controller="Cat">Quay lại</a>
+</div>

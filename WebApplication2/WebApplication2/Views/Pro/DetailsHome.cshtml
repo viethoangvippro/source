@@ -1,0 +1,51 @@
+﻿@model WebApplication2.Models.Pro
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+
+
+<h1 class="col-md-10 offset-1" style="text-align:center;">Chi tiết @Model.NamePro</h1>
+<hr />
+<div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Html.DisplayFor(model => model.Img)" width="100%"/>
+        </div>
+
+         <div class="col-md-6">
+            
+            <div >
+                <p><b>Tên sản phẩm: </b> @Html.DisplayFor(model => model.NamePro)</p>
+            </div>
+            
+            <div >
+                <p><b>Mô tả sản phẩm: </b> @Html.DisplayFor(model => model.Description)</p>
+            </div>
+
+           
+            <div >
+                <p><b>Giá sản phẩm: </b>  @Html.DisplayFor(model => model.Price)</p>
+            </div>
+            
+            <div >
+                <p><b>Ảnh danh mục: </b>  <img src="@Html.DisplayFor(model => model.Cat.Img)" width="40%" /></p>
+            </div>
+            <div style="font-weight:bold;">
+                <a class="btn btn-outline-success" style="border:solid 1px red;">
+                    <i class="bi bi-cart-plus"></i> Thêm vào giỏ
+                </a>
+                <a class="btn btn-outline-danger" style="background:red; color:white" asp-action="Index" asp-controller="Home">
+                     Tiếp tục mua hàng
+                </a>
+            </div>
+          
+        </div>
+       
+    </div>
+</div>
+
+
+
+
+

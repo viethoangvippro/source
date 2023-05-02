@@ -1,0 +1,32 @@
+﻿@model WebApplication2.Models.Cat
+
+@{
+    ViewData["Title"] = "Chi tiết";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Chi tiết</h1>
+
+<div>
+    <h4>@Model.NameCat</h4>
+    <hr />
+    <dl class="col-md-8 offset-md-2">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NameCat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NameCat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Img)
+            
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Img)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" style="max-width:50px;"><i class="bi bi-pencil-square p-4"></i></a> |
+    <a asp-action="IndexTruongVietHoang"><i class="bi bi-arrow-return-left" style="max-width:50px;"></i></a>
+</div>
